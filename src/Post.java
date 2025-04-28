@@ -84,13 +84,28 @@ public class Post {
         this.title = title;
         this.description = description;
         this.views = views;
-        this.comments = new ArrayList<Comment>();
+        this.comments = new ArrayList<String>();
         this.altText = altText;
         this.likes = likes;
     }
     
     public String toString() {
-        return "| " + title + " | \n| " + description + " | \n| " + "Creator: " + creator + " |";
+        return "TITLE | " + title + " | \nDESCRIPTION | " + description + " | \nCREATOR | " + creator + " | \nCONTENT | " + altText + " |";
+    }
+
+    public void like() {
+        this.likes += 1;
+    }
+
+    public String commentsToString() {
+        String commentsString = "Comments \n";
+
+        for (String comment: comments) {
+            commentsString += comment;
+            commentsString += "\n";
+        }
+
+        return commentsString;
     }
 
 }
