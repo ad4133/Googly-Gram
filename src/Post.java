@@ -6,9 +6,13 @@ public class Post {
     private String title;
     private String description;
     private int views;
-    private ArrayList<Comment> comments;
+    private ArrayList<String> comments;
     private String altText;
     private int likes;
+
+    public void comment(String comment) {
+        this.comments.add(comment);
+    }
 
     public String getDateCreated() {
         return this.dateCreated;
