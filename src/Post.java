@@ -90,7 +90,7 @@ public class Post {
     }
     
     public String toString() {
-        return "TITLE | " + title + " | \nDESCRIPTION | " + description + " | \nCREATOR | " + creator + " | \nCONTENT | " + altText + " | \nLIKES | " + this.likes + " likes |";
+        return "TITLE | " + title + " | \nDESCRIPTION | " + description + " | \nCREATOR | " + creator + " | \nCONTENT | " + altText + " | \nLIKES | " + this.likes + " likes | \nVIEWS | " + this.views + " | ";
     }
 
     public void like() {

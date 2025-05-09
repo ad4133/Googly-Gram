@@ -5,11 +5,11 @@ public class Main {
         Giggle[] feed = new Giggle[] {
             new Giggle("Aster", "The sub is an opp", "The sub got the ears of a hawk", "Substitute teacher yelping and screaming at a kid for whistling", "Apr 28, 2025", 10002, 1029, 79.25, 97.5, new String[] {"Gurt: yo"}), 
             new Giggle("Johanna Johnson", "New Slang Drop", "Gotta add new common words to the mainstream", "Aster: Someone who is genius but no life \n Example: Gurt is being so Aster \n Gurt: Sybau", "Apr 19, 2025", 90111, 1101, 81.5, 99.9, new String[] {"C'mon man!"}), 
-            new Giggle("Brainrot.edu", "Update on the new slang drops", "New slang for the new people, super niche", "TS DICTIONARY: \n Kevin: Bad \n Owen: good \n James: Mid \n A'Rayyan: Rich but also kind of autistic \n gurt: Yo \n Yo: What \n What: Sybau", "Jan 1, 1999", 77112, 300133, 94.25, 97.5, new String[] {"Ts lwk mainstream"})
+            new Giggle("Brainrot.edu", "Update on the new slang drops", "New slang for the new people, super niche", "TS DICTIONARY: \n Kevin: Bad \n Owen: good \n James: Mid \n A'Rayyan: Rich but also kind of autistic \n gurt: Yo \n Yo: What \n What: Sybau", "Jan 1, 1999", 77112, 20072, 94.25, 97.5, new String[] {"Ts lwk mainstream"})
         };
 
         Post[] posts = new Post[] {
-            new Post("s", "d", "f", "t", "e", 7, 8, new String[] {"Hello Gurt!", "Yo wsp, gurt!"})
+            new Post("s", "d", "f", "t", "e", 2102, 9, new String[] {"Hello Gurt!", "gng was it worht the 9 likes"})
         };
         
 
@@ -25,8 +25,13 @@ public class Main {
             while (true) {
                 if (scanner.hasNextInt()) {
                     choice = scanner.nextInt();
-                    if (choice >= 1 && choice <= 4) break;
-                } 
+                    if (choice >= 1 && choice <= 4) {
+                        break;
+                    }
+                    else {
+                        System.out.print("Invalid input. Please enter an integer between 1-4: ");
+                    }
+                }
                 else {
                     System.out.print("Invalid input. Please enter an integer between 1-4: ");
                     scanner.next();
@@ -40,6 +45,7 @@ public class Main {
                     if (scanner.hasNextInt()) {
                         choice = scanner.nextInt();
                         if (choice >= 1 && choice <= 3) break;
+                        else System.out.print("Invalid input. Please enter an integer between 1-3: ");
                     } 
                     else {
                         System.out.print("Invalid input. Please enter an integer between 1-3: ");
@@ -66,6 +72,7 @@ public class Main {
                     if (scanner.hasNextInt()) {
                         choice = scanner.nextInt();
                         if (choice >= 1 && choice <= 2) break;
+                        else System.out.print("Invalid input. Please enter an integer between 1-2: ");
                     } 
                     else {
                         System.out.print("Invalid input. Please enter an integer between 1-2: ");
@@ -88,6 +95,7 @@ public class Main {
                     if (scanner.hasNextInt()) {
                         choice = scanner.nextInt();
                         if (choice >= 1 && choice <= 3) break;
+                        else System.out.print("Invalid input. Please enter an integer between 1-3: ");
                     }
                     else {
                         System.out.print("Invalid input. Please enter an integer between 1-3: ");
