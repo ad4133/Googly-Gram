@@ -18,8 +18,8 @@ public class Giggle extends Post {
         this.funnyFactor = funnyFactor;
     };
     
-    public Giggle(String creator, String title, String description, String altText, String dateCreated, int views, int likes, double brainrotRatio, double funnyFactor) {
-        super(creator, title, description, altText, dateCreated, views, likes);
+    public Giggle(String creator, String title, String description, String altText, String dateCreated, int views, int likes, double brainrotRatio, double funnyFactor, String[] comments) {
+        super(creator, title, description, altText, dateCreated, views, likes, comments);
         this.brainrotRatio = brainrotRatio;
         this.funnyFactor = funnyFactor;
     }
@@ -30,5 +30,10 @@ public class Giggle extends Post {
         if (this.funnyFactor > 100.0) {
             this.funnyFactor = 100.0;
         }
+    }
+
+    public void laugh() {
+        this.brainrotRatio += 5;
+        this.funnyFactor = 100.0;
     }
 }

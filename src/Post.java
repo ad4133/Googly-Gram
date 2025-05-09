@@ -6,7 +6,7 @@ public class Post {
     private String title;
     private String description;
     private int views;
-    private ArrayList<String> comments;
+    private String[] comments;
     private String altText;
     private int likes;
 
@@ -54,11 +54,11 @@ public class Post {
         this.views = views;
     }
 
-    public ArrayList<Comment> getComments() {
+    public ArrayList<String> getComments() {
         return this.comments;
     }
 
-    public void setComments(ArrayList<Comment> comments) {
+    public void setComments(ArrayList<String> comments) {
         this.comments = comments;
     }
 
@@ -78,19 +78,19 @@ public class Post {
         this.likes = likes;
     }
 
-    public Post(String creator, String title, String description, String altText, String dateCreated, int views, int likes) {
+    public Post(String creator, String title, String description, String altText, String dateCreated, int views, int likes, String[] comments) {
         this.dateCreated = dateCreated;
         this.creator = creator;
         this.title = title;
         this.description = description;
         this.views = views;
-        this.comments = new ArrayList<String>();
+        this.comments = comments;
         this.altText = altText;
         this.likes = likes;
     }
     
     public String toString() {
-        return "TITLE | " + title + " | \nDESCRIPTION | " + description + " | \nCREATOR | " + creator + " | \nCONTENT | " + altText + " |";
+        return "TITLE | " + title + " | \nDESCRIPTION | " + description + " | \nCREATOR | " + creator + " | \nCONTENT | " + altText + " | \nLIKES | " + this.likes + " likes |";
     }
 
     public void like() {
@@ -98,7 +98,7 @@ public class Post {
     }
 
     public String commentsToString() {
-        String commentsString = "Comments \n";
+        String commentsString = "| COMMENTS |\n";
 
         for (String comment: comments) {
             commentsString += comment;
