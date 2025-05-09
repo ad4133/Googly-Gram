@@ -10,10 +10,6 @@ public class Post {
     private String altText;
     private int likes;
 
-    public void comment(String comment) {
-        this.comments.add(comment);
-    }
-
     public String getDateCreated() {
         return this.dateCreated;
     }
@@ -54,11 +50,11 @@ public class Post {
         this.views = views;
     }
 
-    public ArrayList<String> getComments() {
+    public String[] getComments() {
         return this.comments;
     }
 
-    public void setComments(ArrayList<String> comments) {
+    public void setComments(String[] comments) {
         this.comments = comments;
     }
 
@@ -90,7 +86,7 @@ public class Post {
     }
     
     public String toString() {
-        return "TITLE | " + title + " | \nDESCRIPTION | " + description + " | \nCREATOR | " + creator + " | \nCONTENT | " + altText + " | \nLIKES | " + this.likes + " likes | \nVIEWS | " + this.views + " | ";
+        return "TITLE | " + title + " | \nDESCRIPTION | " + description + " | \nCREATOR | " + creator + " | \nCONTENT | " + altText + " | \nVIEWS | " + this.views + " viwes | \nLIKES | " + this.likes + " likes | ";
     }
 
     public void like() {

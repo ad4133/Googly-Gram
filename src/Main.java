@@ -9,7 +9,10 @@ public class Main {
         };
 
         Post[] posts = new Post[] {
-            new Post("s", "d", "f", "t", "e", 2102, 9, new String[] {"Hello Gurt!", "gng was it worht the 9 likes"})
+            new Post("Ninja", "Lowww Taperrr Fadeee", "The low taper fade meme is so massive", "Ninja dragging the low taper fade meme", "February 25th, 2025", 3921, 9, new String[] {"Hello Gurt!", "gng was it worht the 9 likes"}),
+            new Post("musicguy219", "Timeless Remix", "The timeless remix with Doechii is so buns gng", "The cover of the new Timeless Remix with an X crossing over it", "May 9th, 2025", 40721, 39492, new String[] {"ong it's bad", "timeless got the anxiety treatment 😭"}),
+            new Post("Italian.BrainRot.Hub", "Tralalero Tralala vs Bombardiro Crocodillo", "The epic showdown between these two ancient foes", "Crocodile plane bombing a shark with shoes", "March 15th, 2025", 19283, 792, new String[] {"Ts in the big March of 2025😭", "ancient ahh meme gng"})
+
         };
         
 
@@ -17,7 +20,10 @@ public class Main {
         System.out.print("Welcome to GooglyGram! What is your username? ");
         String username = scanner.nextLine();
         Story[] stories = new Story[] {
-            new  Story("A'Rayyan", "I love " + username, username + " is my favorite human being!", "A'Rayyan and you, embracing", "May 9th, 2025", 9, 10, 99.0, new String[] {"Nice!", "Good for you, A'Rayyan!"})
+            new  Story("A'Rayyan", "I love " + username, username + " is my favorite human being!", "A'Rayyan and you, embracing", "May 9th, 2025", 71, 10, 99.0, new String[] {"Nice!", "Good for you, A'Rayyan!"}),
+            new  Story("Joey", "I really like " + username, username + " is my goat!!!", "Joey and you, embracing", "May 4th, 2025", 18, 13, 91.0, new String[] {"Thats great!!", "Thats amazing man great job!"}),
+            new  Story("BrainRot.Memes", "I love " + username, username + " is so funny!", "Ts made me giggle so much.", "June 9th, 2025", 9000, 1700, 89.0, new String[] {"Ts is so Kevin!", "Brainrot in the big 25 💔"})
+
         };
         int choice = 0;
         while (true) {
